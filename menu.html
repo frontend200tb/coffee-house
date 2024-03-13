@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Иван Каширин">
+  <meta name="copyright" content="200TB Web Studio">
+  <meta name="description" content="RS School Frontend Javascript Stage 1">
+  <meta name="keywords" content="coffee-house home">
+  <title>frontend200tb coffee-house menu</title>
+  <link rel="icon" href="./favicon.png">
+  <link rel="stylesheet" href="./css/font.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/burger.js" defer></script>
+</head>
+
+<body>
+<div class="page js-page">
+
+
+  <!-- H E A D E R -->
+  <header class="header">
+    <div class="container">
+      <div class="header-content">
+
+        <a href="./index.html"><img src="./assets/images/logo.png" alt="logo" class="header__logo"></a>
+
+
+        <!-- header__menu
+            1440 display: block;
+            1024 display: none;
+        -->
+        <div class="header__menu js-header__menu">
+          <nav class="header__nav">
+            <ul class="header__nav-ul">
+              <li class="header__nav-li">
+                <a href="./index.html#favorite" class="header__nav-a">Favorite coffee</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="./index.html#about" class="header__nav-a">About</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="./index.html#mobile" class="header__nav-a">Mobile app</a>
+              </li>
+              <li class="header__nav-li">
+                <a href="#contact" class="header__nav-a">Contact us</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__link-to-menu header__link-to-menu-active">Menu <div class="header__menu-logo"></div></div>
+        </div>
+
+        <!-- header__icon-burger
+            1440 display: none;
+            1024 display: block;
+        -->
+        <div class="icon-burger js-icon-burger">
+          <div></div>
+          <div></div>
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+  <!-- / H E A D E R -->
+
+
+  <!-- M A I N -->
+  <main>
+    <div class="container">
+
+      <!-- M E N U - S E L E C T -->
+      <section class="menu-select">
+
+        <h1 class="section-title menu-main-title">Behind each of our cups hides an <span class="accent">amazing surprise</span></h1>
+        <div class="menu-btns">
+
+          <div class="menu-btn js-select-btn btn-active">
+            <div class="btn-icon coffee-logo"></div>
+            <div class="btn-text">Coffee</div>
+          </div>
+
+          <div class="menu-btn js-select-btn">
+            <div class="btn-icon tea-logo"></div>
+            <div class="btn-text">Tea</div>
+          </div>
+
+          <div class="menu-btn js-select-btn">
+            <div class="btn-icon dessert-logo"></div>
+            <div class="btn-text">Dessert</div>
+          </div>
+
+        </div>
+      </section>
+      <!-- / M E N U - S E L E C T -->
+
+      <!-- M E N U - C A R D S -->
+      <div class="cards-container">
+
+        <!-- Show only one of three -->
+        <!-- First coffee cards -->
+        <div class="cards-wrapper js-cards-wrapper js-coffee-cards">
+        </div>
+
+        <!-- Show only one of three -->
+        <!-- Second tea cards -->
+        <div class="cards-wrapper js-cards-wrapper js-tea-cards none">
+        </div>
+
+        <!-- Show only one of three -->
+        <!-- Third dessert cards -->
+        <div class="cards-wrapper js-cards-wrapper js-dessert-cards none">
+        </div>
+
+      </div>
+      <!-- / M E N U - C A R D S -->
+
+      <div class="refresh js-refresh none"></div>
+    </div>
+  </main>
+  <!-- / M A I N -->
+
+
+  <!-- F O O T E R -->
+  <footer id="contact" class="footer">
+    <div class="container">
+
+      <!-- footer-content
+        1440 display: flex; flex-direction: row;
+        768 display: flex; flex-direction: column;
+      -->
+      <div class="footer-content">
+
+        <div class="footer-offer">
+          <div class="footer-slogan">Sip, Savor, Smile. <span class="accent">It’s coffee time!</span></div>
+          <div class="footer-socials">
+
+            <div class="social-icon icon-twitter"></div>
+            <div class="social-icon icon-instagram"></div>
+            <div class="social-icon icon-facebook"></div>
+
+          </div>
+        </div>
+
+        <div class="footer-contacts-info">
+
+          <div class="contact-text">Contact us</div>
+
+          <div class="contacts">
+            <a href="https://www.google.com/maps/search/a+href+location/@53.8901652,30.3106707,14.25z?entry=ttu" class="link-item" target="_blank">
+              <div><img src="./assets/svg/icon-location.svg" alt="location"></div>
+              <div class="link-item-text">8558 Green Rd.,&nbsp;  LA</div>
+            </a>
+
+            <a href="tel:+16035550123" class="link-item">
+              <div><img src="./assets/svg/icon-phone.svg" alt="phone"></div>
+              <div class="link-item-text">+1 (603) 555-0123</div>
+            </a>
+
+            <div class="link-item">
+              <div><img src="./assets/svg/icon-clock.svg" alt="clock"></div>
+              <div class="link-item-text">Mon-Sat: 9:00 AM – 23:00 PM</div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- / F O O T E R -->
+
+
+  <!-- O V E R L A Y -->
+  <div class="overlay js-overlay none"></div>
+  <!-- / O V E R L A Y -->
+
+
+  <!-- M O D A L -->
+  <div class="modal js-modal none">
+  </div>
+  <!-- / M O D A L -->
+
+
+</div>
+<script src="./js/menu.js" type="module"></script>
+</body>
+</html>
